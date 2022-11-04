@@ -108,4 +108,6 @@ function destapar(id){
         }
     }
 }
-
+function restart() {
+    location.reload();
+}
