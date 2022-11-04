@@ -50,8 +50,6 @@ function showFiles(files) {
     }
 }
 
-
-
 function processFile(file) {
     const docType = file.type;
     const validExtensions = ['image/jpeg', 'image/jpg', 'image/png', 'iamge/gif'];
