@@ -10,11 +10,11 @@ body {
     user-select: none;
 }
 .container {
-    width: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 80vh;
 }
 .metronome {
     display: flex;
