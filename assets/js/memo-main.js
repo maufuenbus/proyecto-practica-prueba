@@ -10,13 +10,11 @@ let temporizador = false;
 let timer = 60;
 let timerInicial = timer;
 let tiempoRegresivoId = null;
-
 let winAudio = new Audio('./assets/recursos/sonidos-memorice/win.wav')
 let loseAudio = new Audio('./assets/recursos/sonidos-memorice/lose.wav')
 let clickAudio = new Audio('./assets/recursos/sonidos-memorice/click.wav')
 let rightAudio = new Audio('./assets/recursos/sonidos-memorice/right.wav')
 let wrongAudio = new Audio('./assets/recursos/sonidos-memorice/wrong.wav')
-
 
 //apuntandor html
 let mostrarMovimientos = document.getElementById('movimientos')
@@ -110,3 +108,4 @@ function destapar(id){
         }
     }
 }
+
