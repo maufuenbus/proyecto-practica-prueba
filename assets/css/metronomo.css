@@ -1,38 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    color: #525252;
-    user-select: none;
-}
-.container {
+.container-padre{
     width: 100%;
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin-bottom: 10px;
 }
-.metronome {
+.container-metronome{
+    padding: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px; 
+    width: 520px;
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 250px;
-    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 3px solid;
 }
+.container-mic{
+    width: 100%;
+}
+.selector-audio{
+    text-align: center;
+}
+
+.metronome {
+    width: 100%;
+    display: flex;
+    flex-direction: block;
+    text-align: center;
+    justify-content: center;
+}
+
 .bpm-display {
+    margin-bottom: 10px;
+    margin-top: 10px;
     width: 100%;
     text-align: center;
     color: #fa545c;
     font-weight: bold;
 }
+
 .bpm-display .tempo {
     font-size: 4em;
 }
+
 .tempo-text {
     font-size: .8em;
     text-transform: uppercase;
@@ -53,13 +61,16 @@ body {
     text-align: center;
     cursor: pointer;
 }
+
 .tempo-settings .adjust-tempo-btn:hover {
     background: #fa545c;
     color: #fff;
 }
+
 .tempo-settings .decrease-tempo {
     line-height: 25px;
 }
+
 .tempo-settings .increase-tempo {
     line-height: 32px;
 }
@@ -69,6 +80,7 @@ input[type=range] {
     background-color: transparent;
     width: 70%;
 }
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
@@ -106,14 +118,26 @@ input[type=range]::-moz-range-track {
     height: 1px;
     background: #ddd;
 }
+.controlador{
+    /* border: 1px solid; */
+    padding: 1px;
+    text-align: center;
+    display: block;
+    margin: 0 0 0 40px;
+    width: auto;
+}
+.controlador .start-stop{
+    line-height: 18px;
+}
 
 .start-stop {
-    width: 50px;
+    display: block;
+    width: 150px;
     height: 50px;
-    font-size: 0.7em;
+    font-size: 14px;
     text-align: center;
     background: #fa545c;
-    border-radius: 50%;
+    border-radius: 5px;
     color: #fff;
     line-height: 50px;
     margin: 0 auto;
@@ -123,17 +147,20 @@ input[type=range]::-moz-range-track {
 .start-stop:hover {
     background: #ff656c;
 }
+
 .measures {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
+
 .measures .stepper {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 1px solid #ddd;
     text-align: center;
-    margin: 0 5px;
+    margin: 0 10px;
     cursor: pointer;
 }
 .measures .stepper:hover {
@@ -141,22 +168,23 @@ input[type=range]::-moz-range-track {
     color: #fff;
 }
 .measures .add-beats {
-    line-height: 20px;
+    line-height: 18px;
 }
-
+.measures .subtract-beats{
+    line-height: 18px;
+}
 .beats-per-measure-text {
     text-align: center;
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-transform: uppercase;
 }
 
 
-.selector-audio{
-    width: 100%;
+.homepage.selector-audio{
+    max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 p{
     margin-top: 15px;
@@ -166,7 +194,6 @@ p{
 .duracion{
     text-align: center;
 }
-
 
 
 
