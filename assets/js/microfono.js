@@ -70,7 +70,7 @@ const init = () => {
         const comenzarAGrabar = () => {
             if (!$listaDeDispositivos.options.length) return alert("No hay dispositivos");
             // No permitir que se grabe doblemente
-            if (mediaRecorder) return alert("Finalizo la grabación");
+            if (mediaRecorder) return alert("Excelente, completaste tu Ejercitación. Recuerda que debes ejercitar almenos 3 veces al día");
 
             navigator.mediaDevices.getUserMedia({
                     audio: {
