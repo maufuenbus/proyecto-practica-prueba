@@ -128,7 +128,7 @@ const init = () => {
         }
 
         const detenerGrabacion = () => {
-            if (!mediaRecorder) return alert("Se inicializa la grabacion");
+            if (!mediaRecorder) return
             mediaRecorder.stop();
             mediaRecorder = null;
         };

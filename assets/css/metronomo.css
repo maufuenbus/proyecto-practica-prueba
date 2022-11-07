@@ -1,17 +1,36 @@
+.saludo, .saludo2{
+    display: flex;
+    max-width: 400px;
+    height: 30vh;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 15px 10px 15px;
+    border: 3px solid;
+}
+.saludo .bienvenida{
+    height: fit-content;
+}
+
+
+
 .container-padre{
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
-    text-align: center;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .container-metronome{
     padding: 50px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 5px 5px 5px 5px; 
+    border-radius: 5px 5px 5px 5px;
     width: 520px;
     display: flex;
     margin-bottom: 10px;
     border: 3px solid;
+
 }
 .container-mic{
     width: 100%;
@@ -218,22 +237,16 @@ p{
 
 .contenido{
     margin: auto;
-    height: 40%;
-    width: 40%;
-    background: white;
+    height: auto;
+    width: 50%;
+    background: rgb(39, 38, 38);
     border-radius: 10px;
 }
 
-.contenido h1{
-    border-bottom: solid 1px;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
 
-}
-.contenido p{
+.contenido img{
     width: 100%;
-    height: 30vh;
+    height: auto;
     justify-content: center;
     text-align: center;
     padding: 5px;
@@ -273,3 +286,5 @@ p{
         opacity: 1;
     }
 }
+
+
