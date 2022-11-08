@@ -42,7 +42,6 @@ function main(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-  
 
     class Bar {
         constructor(x, y, width, height, color, index) {
@@ -70,12 +69,12 @@ function main(){
             context.scale(1+ volume * 0.2,1 + volume * 0.2);
 
             context.beginPath();
-            context.moveTo(this.x, this.y);
+            //context.moveTo(this.x, this.y);
             context.lineTo(this.y, this.height);
             //context.bazierCurve(0, 0, this.height, this.height, this.x, this.y);
             context.stroke();
 
-            context.rotate(this.index * 0.3); //3
+            /context.rotate(this.index * 0.3); //3
             context.strokeRect(this.y + this.index * 1.5, this.height, 
                 this.height/2, this.height);
             //context.beginPath();
