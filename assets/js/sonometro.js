@@ -71,7 +71,6 @@ function main(){
             context.beginPath();
             context.moveTo(this.x, this.y);
             context.lineTo(this.y, this.height);
-            
             context.stroke();
 
             /context.rotate(this.index * 0.3); //3
