@@ -69,9 +69,9 @@ function main(){
             context.scale(1+ volume * 0.2,1 + volume * 0.2);
 
             context.beginPath();
-            //context.moveTo(this.x, this.y);
+            context.moveTo(this.x, this.y);
             context.lineTo(this.y, this.height);
-            //context.bazierCurve(0, 0, this.height, this.height, this.x, this.y);
+            
             context.stroke();
 
             /context.rotate(this.index * 0.3); //3
