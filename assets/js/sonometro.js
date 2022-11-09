@@ -69,7 +69,7 @@ function main() {
     function createBars(){
         for (i = 0; i < 256; i++){
             let color = 'hsl(' + i * 2 + ', 100%, 50%)';
-            bars.push(new Bar(i * barWidth , canvas.height/2 , 1, 20, color))
+            bars.push(new Bar(i * barWidth , canvas.height/2 , 1.9, 20, color))
         }
     }
     createBars();
